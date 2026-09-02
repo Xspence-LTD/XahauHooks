@@ -196,4 +196,8 @@ These proofs cover the security fixes (contiguous packing / sparse slot forwards
 | SP2 | tesSUCCESS | `C873252CEE6D19F1D11A32AB212D879153828785F84B0E578B0B1B12168DF9E6` | (config) |
 | Payment sparse | tesSUCCESS | `885C4AB1724F33D298AB507E95D8015D6691C7C6BA0386CD85525C0B502E6275` | contiguous pack forwards OK |
 
+## Independent review
+
+Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
+
 *Built with ❤️ for the Xahau ecosystem by Xspence-LTD*

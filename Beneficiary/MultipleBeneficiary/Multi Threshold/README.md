@@ -183,4 +183,8 @@ These proofs cover the security fixes (fail-closed timer arming / stranger payme
 | Stranger Payment (no arm) | tesSUCCESS | `2C8F31224A0F68B550C00A43A3D16A2768F80C0015E8E39BE0C06710D9E1DF00` | pass-through, no LAST_CHECKIN |
 | Owner Payment arms | tesSUCCESS | `60A4B33C554CE4E8F17E2C1304065F4B6A91F032AE4EC0FD30CF5E1C31BB0566` | timer reset + LASTCHEC written |
 
+## Independent review
+
+Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
+
 _Built with ❤️ for the Xahau ecosystem by Xspence-LTD_

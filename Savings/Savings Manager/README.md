@@ -347,3 +347,7 @@ These proofs cover the security fixes (early-release / lock-on-deposit behaviour
 | AUTO_RELEASE=50 | tesSUCCESS | `C05EB19E1FC14F45EBC3DEE03A04B0FB2B911F92133C9C73A9983C83BE207B15` | (config) |
 | SET_INTERVAL=50 | tesSUCCESS | `3C15D70C6E01F0468B084A132A404C289BB5D4504869EE74ADDD3F431DB4569A` | (config) |
 | Deposit 5 XAH | tesSUCCESS | `9B123F2A9ECF263DFE08A7859222E7C5E7E48E3FA0FE07E1EF7FC2CDEA27302C` | Payment Added to locked balance; LOCKED=5000000; no AVAIL; no LASTRELE |
+
+## Independent review
+
+Independent review by [Kairo Vault Technologies GK](https://kairovault.com).

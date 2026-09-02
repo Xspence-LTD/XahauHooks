@@ -136,4 +136,8 @@ These proofs cover the security fixes (fail-closed timer arming / early-release 
 | Owner arm | tesSUCCESS | `8EB7D5506695A0EDF56AA391C7C8A6E8D172B24E4FDF938B443F30D35932E0D9` | SBC:: Success :: Outgoing payment from hook account accepted, timer reset |
 | SEND under threshold | tecHOOK_REJECTED | `4FEE60AD3A68CD8144F7D8279CE0C339A6B483055F9560AAC12AB00FF6783C4B` | SBC:: Error :: You must wait ... before triggering. |
 
+## Independent review
+
+Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
+
 *Built with ❤️ for the Xahau ecosystem by Xspence-LTD*

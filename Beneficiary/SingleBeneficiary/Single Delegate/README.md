@@ -112,4 +112,8 @@ A production-ready Xahau hook for delegate-controlled single-beneficiary distrib
 
 This hook was reviewed as out-of-scope for the timer/sparse findings (no `LAST_CHECKIN` / multi-slot packing) and has no matching on-chain proof hashes in this release.
 
+## Independent review
+
+Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
+
 *Built with ❤️ for the Xahau ecosystem by Xspence-LTD*

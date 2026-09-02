@@ -189,4 +189,8 @@ These proofs cover the security fixes (fail-closed timer arming), not a full fea
 | BA1/BP1 | tesSUCCESS | `0C0581BCCE0EC704D4CBCB51881728D4128011C2C186BF743A1F9862DA34CC69` | MBC:: Success :: BA1 and BP1 configured |
 | Unarmed SEND | tecHOOK_REJECTED | `79FFDC368DD8C797B0ABD95ABA28837E5944FFFF4729E1EB3598D186777F18FF` | MBC:: Error :: Timer not armed - owner must make one outgoing payment |
 
+## Independent review
+
+Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
+
 *Built with ❤️ for the Xahau ecosystem by Xspence-LTD*

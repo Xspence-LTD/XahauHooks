@@ -194,4 +194,8 @@ These proofs cover the security fixes (contiguous multi-slot packing / dense BA2
 | BA2/BP2 dense | tesSUCCESS | `AC161737FC7B088B7341CB7BEF8A700831B77A39883251D121A096AC80BEA0F8` | (config) |
 | Delegate SEND | tesSUCCESS | `155FFD6E8DD09A64047E07DE825AC0C379D6E8C01A37B6535F5617285546B56A` | MBDC:: Success :: Balance distributed to beneficiaries |
 
+## Independent review
+
+Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
+
 _Built with ❤️ for the Xahau ecosystem by Xspence-LTD_

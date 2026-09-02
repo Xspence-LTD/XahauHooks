@@ -1,4 +1,4 @@
-﻿# XahauHooks
+# XahauHooks
 
 Open-source [Xahau](https://xahau.network) Hooks by **Xspence-LTD**.
 
@@ -50,3 +50,7 @@ Each hook folder includes its `.c`, colocated `.wasm`, and install / usage READM
 ## Org
 
 Maintained by [Xspence-LTD](https://github.com/Xspence-LTD).
+
+## Independent review
+
+Independent review by [Kairo Vault Technologies GK](https://kairovault.com).

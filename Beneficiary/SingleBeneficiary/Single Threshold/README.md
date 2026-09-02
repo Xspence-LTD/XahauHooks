@@ -110,4 +110,8 @@ These proofs cover the security fixes (timer arming / stranger payment guard), n
 | Owner arm | tesSUCCESS | `9AEDB959D03E87B41D96BCFCA12759098C7AD871BCD29B03C0367E56B0953627` | SBTC:: Success :: Outgoing payment from hook account accepted, timer reset |
 | Stranger dust | tecHOOK_REJECTED | `9EA9B05EB4A50343437BE8712EE65E0B252D075E9EA10929BCF785EB3B29383F` | must wait (timer NOT reset) |
 
+## Independent review
+
+Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
+
 *Built with ❤️ for the Xahau ecosystem by Xspence-LTD*
