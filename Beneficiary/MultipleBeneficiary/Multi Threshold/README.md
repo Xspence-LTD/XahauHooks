@@ -120,17 +120,14 @@ Any incoming payment or invoke from an external account (after threshold exceede
 
 ## Messages
 
-- **Success**
-### Messages
-
-#### Success
+### Success
 
 - `"MBTC:: Success :: Outgoing payment from hook account accepted, timer reset"` – Timer reset
 - `"MBTC:: Success :: BAx and BPx configured"` – Beneficiary and percentage set
 - `"MBTC:: Success :: Balance distributed to beneficiaries (threshold exceeded)"` – Distribution completed
 - `"MBTC:: Success :: Transaction passed through"` – Non-matching transaction allowed
 
-#### Warnings & Errors
+### Warnings & Errors
 
 - `"MBTC:: Warning :: No valid configuration parameters, submit BAx and BPx pairs"` – Invalid invoke
 - `"MBTC:: Warning :: BA2 cannot match BA1"` – Duplicate account
@@ -146,13 +143,13 @@ Any incoming payment or invoke from an external account (after threshold exceede
 - `"MBTC:: Error :: Insufficient balance"` – Not enough funds
 - `"MBTC:: Error :: Failed to emit payment to beneficiary"` – Emit failed
 
-#### Complete
+### Complete
 
 - `"MBTC:: Complete :: This contract appears to have been completed, Farewell Adventurer <3"` – Balance below reserve
 
 ---
 
-### Security & Compliance
+## Security & Compliance
 
 - **Automatic Trigger**: Only activates after threshold and on incoming transactions from non-owners.
 - **Pair Submission Enforcement**: BAx/BPx pairs must be submitted together to prevent misconfiguration.
@@ -161,7 +158,7 @@ Any incoming payment or invoke from an external account (after threshold exceede
 
 ---
 
-### Tools & Resources
+## Tools & Resources
 
 - [Xahau Hooks Builder](https://hooks-builder.xrpl.org/develop)
 - [Hooks API Reference](https://xrpl-hooks.readme.io/reference/hook-api-conventions)

@@ -1,4 +1,4 @@
-﻿# Secrets / env
+# Secrets / env
 .env
 .env.*
 *.secret
@@ -23,7 +23,6 @@ Desktop.ini
 .idea/
 .vscode/
 
-# Build intermediates (keep wasm/)
+# Build intermediates (keep colocated .wasm artifacts tracked)
 *.o
 *.obj
-!wasm/

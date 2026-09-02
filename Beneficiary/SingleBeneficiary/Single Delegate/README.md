@@ -108,6 +108,10 @@ A production-ready Xahau hook for delegate-controlled single-beneficiary distrib
 
 ---
 
+## Build artifact
+
+Prebuilt `.wasm` is **not bundled yet** for this hook. Compile `SingleBeneficiaryDelegate.c` with the Xahau Hooks toolchain (or Hooks Builder) before install. Do not invent or substitute another hook's wasm.
+
 ## Verified tests
 
 This hook was reviewed as out-of-scope for the timer/sparse findings (no `LAST_CHECKIN` / multi-slot packing) and has no matching on-chain proof hashes in this release.
