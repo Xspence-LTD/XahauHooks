@@ -1,0 +1,29 @@
+﻿# Secrets / env
+.env
+.env.*
+*.secret
+*.pem
+*.key
+accounts/
+secrets/
+
+# Dependencies / venv
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+
+# Build intermediates (keep wasm/)
+*.o
+*.obj
+!wasm/
