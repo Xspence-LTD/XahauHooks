@@ -179,4 +179,19 @@ A production-ready Xahau hook for automated multi-beneficiary distribution using
 - [Address → AccountID](https://hooks.services/tools/raddress-to-accountid)
 - [Explorer / Logs](https://xahau-testnet.xrplwin.com/)
 
+---
+
+## Verified on Xahau Testnet
+
+Network: Xahau Testnet (NetworkID 21338). Date: 2026-09-02.
+
+These proofs cover the security fixes (contiguous multi-slot packing / dense BA2+BP2), not a full feature matrix.
+
+| Step | Result | Hash | HookReturn |
+|------|--------|------|------------|
+| SetHook | tesSUCCESS | `F5F1CB7C65A6BD80DB95159E643E203496649C2DCAC45A9802765299F026E5B6` | (install) |
+| BA1/BP1 | tesSUCCESS | `B9C928D2FBCCD2943D172462FAA5232EDF1C2E512E7AE690695135BBEB5C4385` | (config) |
+| BA2/BP2 dense | tesSUCCESS | `AC161737FC7B088B7341CB7BEF8A700831B77A39883251D121A096AC80BEA0F8` | (config) |
+| Delegate SEND | tesSUCCESS | `155FFD6E8DD09A64047E07DE825AC0C379D6E8C01A37B6535F5617285546B56A` | MBDC:: Success :: Balance distributed to beneficiaries |
+
 _Built with ❤️ for the Xahau ecosystem by Xspence-LTD_

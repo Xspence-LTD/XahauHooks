@@ -177,6 +177,23 @@ The Incoming Payment Savings Hook provides a straightforward, automated way to e
 - **Address → AccountID** — https://hooks.services/tools/raddress-to-accountid
 - **Explorer / Logs** — https://xahau-testnet.xrplwin.com/
 
+
 ---
+
+## Verified on Xahau Testnet
+
+Network: Xahau Testnet (NetworkID 21338). Date: 2026-09-02.
+
+These proofs cover the security fixes (contiguous packing / sparse slot forwards), not a full feature matrix.
+
+| Step | Result | Hash | HookReturn |
+|------|--------|------|------------|
+| SetHook | tesSUCCESS | `DA89E3DB87867B9A14C9106ADA05426DB8DCBBC7223BBBE1BED5972930C50132` | (install) |
+| SA1 config | tesSUCCESS | `5A8FE9FF3BDD0AEA2131834FD330509ADC07E20419EBB3E9E190CBB3FC403FC6` | (config) |
+| SP1 config | tesSUCCESS | `B8A3A9FE2AE2A6B8554C0822E472B9E3E328FD81E10FC6C6ACFF446039DCC15F` | (config) |
+| Sparse SetHook ns | tesSUCCESS | `E8D7511151567931740AA80A61D0277859195BCD1E7F76ABE6F9EC3A23BD70B5` | (install ns) |
+| SA2-without-SA1 | tesSUCCESS | `A2A927B7B178F83030439A027E474B687410DC43FC46610CFFFAF30CCDC83BAC` | (config) |
+| SP2 | tesSUCCESS | `C873252CEE6D19F1D11A32AB212D879153828785F84B0E578B0B1B12168DF9E6` | (config) |
+| Payment sparse | tesSUCCESS | `885C4AB1724F33D298AB507E95D8015D6691C7C6BA0386CD85525C0B502E6275` | contiguous pack forwards OK |
 
 *Built with ❤️ for the Xahau ecosystem by Xspence-LTD*

@@ -168,4 +168,19 @@ Any incoming payment or invoke from an external account (after threshold exceede
 - [Address → AccountID](https://hooks.services/tools/raddress-to-accountid)
 - [Explorer / Logs](https://xahau-testnet.xrplwin.com/)
 
+---
+
+## Verified on Xahau Testnet
+
+Network: Xahau Testnet (NetworkID 21338). Date: 2026-09-02.
+
+These proofs cover the security fixes (fail-closed timer arming / stranger payment guard), not a full feature matrix.
+
+| Step | Result | Hash | HookReturn |
+|------|--------|------|------------|
+| SetHook | tesSUCCESS | `E1EC97A78C462975502CC2593FDDA229A8A6DA6253E80ABB2BEBDBEA3C01A703` | (install) |
+| Unarmed stranger Invoke | tecHOOK_REJECTED | `D7352F519EAFA322D23F8A6F52BFE5D367549C9F914AF75C3F22FEF0277EFC8F` | MBTC:: Error :: Timer not armed... |
+| Stranger Payment (no arm) | tesSUCCESS | `2C8F31224A0F68B550C00A43A3D16A2768F80C0015E8E39BE0C06710D9E1DF00` | pass-through, no LAST_CHECKIN |
+| Owner Payment arms | tesSUCCESS | `60A4B33C554CE4E8F17E2C1304065F4B6A91F032AE4EC0FD30CF5E1C31BB0566` | timer reset + LASTCHEC written |
+
 _Built with ❤️ for the Xahau ecosystem by Xspence-LTD_

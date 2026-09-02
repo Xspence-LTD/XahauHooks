@@ -29,7 +29,7 @@ Dead-man's-switch style hooks that distribute the hook account's XAH balance aft
 | **Multi Beneficiary Delegate (MBDC)** | `Beneficiary/MultipleBeneficiary/Multi Delegate/MultiBeneficiaryDelegate.c` | Delegate invokes to distribute full balance across configured beneficiaries. |
 | **Multi Beneficiary Threshold (MBTC)** | `Beneficiary/MultipleBeneficiary/Multi Threshold/MultiBeneficiaryThreshold.c` | After threshold, any non-owner incoming tx triggers multi-beneficiary distribution. |
 
-Prebuilt WASM (where available) lives under `wasm/`.
+Prebuilt `.wasm` artifacts sit beside each hook's `.c` source. Verified Xahau Testnet proof hashes are documented in each hook README.
 
 ## Savings collection
 
@@ -41,12 +41,11 @@ Prebuilt WASM (where available) lives under `wasm/`.
 ## Layout
 
 ```
-Beneficiary/     # Single + Multi beneficiary hook sources and READMEs
-Savings/         # Savings Manager + Savings Hook sources and READMEs
-wasm/            # Verified prebuilt .wasm artifacts
+Beneficiary/     # Single + Multi beneficiary hook sources, READMEs, and .wasm
+Savings/         # Savings Manager + Savings Hook sources, READMEs, and .wasm
 ```
 
-Each hook folder includes its own install / usage README.
+Each hook folder includes its `.c`, colocated `.wasm`, and install / usage README (with verified testnet hashes where applicable).
 
 ## Org
 

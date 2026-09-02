@@ -120,6 +120,20 @@ A production-ready Xahau hook for automated single-beneficiary distribution usin
 - **Address → AccountID** — https://hooks.services/tools/raddress-to-accountid
 - **Explorer / Logs** — https://xahau-testnet.xrplwin.com/
 
+
 ---
+
+## Verified on Xahau Testnet
+
+Network: Xahau Testnet (NetworkID 21338). Date: 2026-09-02.
+
+These proofs cover the security fixes (fail-closed timer arming / early-release gate), not a full feature matrix.
+
+| Step | Result | Hash | HookReturn |
+|------|--------|------|------------|
+| SetHook | tesSUCCESS | `AEA17756E625FA4A48F7339BE0B8D4C14DE4A1E1562EA5FA0592A17AC224E7F3` | (install) |
+| Unarmed SEND | tecHOOK_REJECTED | `6E5F76D08B7C5182F8EB1FB2B97FBA9FAB878A1CE0FB1C514677D9C5533A63D0` | SBC:: Error :: Timer not armed - owner must make one outgoing payment |
+| Owner arm | tesSUCCESS | `8EB7D5506695A0EDF56AA391C7C8A6E8D172B24E4FDF938B443F30D35932E0D9` | SBC:: Success :: Outgoing payment from hook account accepted, timer reset |
+| SEND under threshold | tecHOOK_REJECTED | `4FEE60AD3A68CD8144F7D8279CE0C339A6B483055F9560AAC12AB00FF6783C4B` | SBC:: Error :: You must wait ... before triggering. |
 
 *Built with ❤️ for the Xahau ecosystem by Xspence-LTD*

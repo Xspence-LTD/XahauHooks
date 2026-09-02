@@ -105,6 +105,11 @@ A production-ready Xahau hook for delegate-controlled single-beneficiary distrib
 - **Address → AccountID** — https://hooks.services/tools/raddress-to-accountid
 - **Explorer / Logs** — https://xahau-testnet.xrplwin.com/
 
+
 ---
+
+## Verified tests
+
+This hook was reviewed as out-of-scope for the timer/sparse findings (no `LAST_CHECKIN` / multi-slot packing) and has no matching on-chain proof hashes in this release.
 
 *Built with ❤️ for the Xahau ecosystem by Xspence-LTD*
