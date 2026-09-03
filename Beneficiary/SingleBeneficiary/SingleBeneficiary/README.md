@@ -1,4 +1,4 @@
-# Single Beneficiary Contract (SBC) – XahauHooks
+﻿# Single Beneficiary Contract (SBC) – XahauHooks
 
 A production-ready Xahau hook for automated single-beneficiary distribution using a Dead Man's Switch. This contract enables secure, time-based transfer of the entire account balance to a designated beneficiary if the hook account becomes inactive.
 
@@ -141,3 +141,12 @@ These proofs cover the security fixes (fail-closed timer arming / early-release 
 Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
 
 *Built with ❤️ for the Xahau ecosystem by Xspence-LTD*
+
+## Emit encoding re-verification (2026-09-03)
+
+`PREPARE_PAYMENT_SIMPLE` exact-length emit fix re-tested on Xahau Testnet (NetworkID 21338). Successful payout emit after `THRESHOLD=1` arm:
+
+- Unarmed SEND: `8B672B5C7DF0447AD2E8CDABC49898AC523C43C1B3FE6CC7DB0A0AC4932A14EE` — `Timer not armed`
+- Emit success SEND: `C3E25F08196E4D34F067224982FA27CA3EA4B2746E30147E7DAE9577C927B525` — `Balance sent to beneficiary successfully`
+
+Full matrix: `../../emit_fix_validation.md`.

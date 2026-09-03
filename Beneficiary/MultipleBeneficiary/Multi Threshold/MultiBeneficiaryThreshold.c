@@ -1,6 +1,6 @@
 //**************************************************************
-// Multi Beneficiary Threshold Contract (MBTC) - XahauHooks
-// Author: Xspence-LTD
+// Multi Beneficiary Threshold Contract (MBTC) - Xahau HandyHook Collection
+// Author: @Handy_4ndy
 //
 // Description:
 //   When the inactivity threshold has been exceeded, any incoming transaction (payment or invoke)
@@ -315,9 +315,10 @@ int64_t hook(uint32_t reserved)
             if (beneficiary_amount > 0)
             {
                 uint8_t txn[PREPARE_PAYMENT_SIMPLE_SIZE];
-                PREPARE_PAYMENT_SIMPLE(txn, beneficiary_amount, beneficiary_accounts[i], 0, 0);
+                uint32_t txn_len = 0;
+                PREPARE_PAYMENT_SIMPLE(txn, beneficiary_amount, beneficiary_accounts[i], 0, 0, txn_len);
                 uint8_t emithash[32];
-                if (emit(SBUF(emithash), SBUF(txn)) != 32)
+                if (emit(SBUF(emithash), txn, txn_len) != 32)
                     NOPE("Failed to emit payment to beneficiary");
             }
         }

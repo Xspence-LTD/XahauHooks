@@ -1,6 +1,6 @@
 //*****************************************************************
-//  Single Beneficiary Contract – XahauHooks
-//  Author: Xspence-LTD
+//  Single Beneficiary Contract – Xahau HandyHook Collection
+//  Author: @Handy_4ndy
 //
 //  Overview:
 //  Automatically distributes the entire hook account balance to a
@@ -153,12 +153,13 @@ int64_t hook(uint32_t reserved)
 
                 // Prepare payment transaction
                 uint8_t txn[PREPARE_PAYMENT_SIMPLE_SIZE];
-                PREPARE_PAYMENT_SIMPLE(txn, send_amount, beneficiary_acc, 0, 0);
+                uint32_t txn_len = 0;
+                PREPARE_PAYMENT_SIMPLE(txn, send_amount, beneficiary_acc, 0, 0, txn_len);
 
                 uint8_t emithash[32];
 
                 // Emit the transaction
-                if (emit(SBUF(emithash), SBUF(txn)) != 32)
+                if (emit(SBUF(emithash), txn, txn_len) != 32)
                     NOPE("Failed to emit balance transfer transaction");
 
                 DONE("Balance sent to beneficiary successfully (threshold exceeded)");

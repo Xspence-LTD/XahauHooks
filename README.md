@@ -1,4 +1,4 @@
-# XahauHooks
+﻿# XahauHooks
 
 Open-source [Xahau](https://xahau.network) Hooks by **Xspence-LTD**.
 
@@ -15,6 +15,7 @@ These sets include verified hardening:
 - Early-release gate
 - Contiguous packing
 - `ttPAYMENT` compile fix
+- **Emit encoding fix (2026-09-03):** `PREPARE_PAYMENT_SIMPLE` now writes exact txn length (`sizeout` / `txn_len`) so `etxn_details` / `etxn_fee_base` / `emit` no longer include trailing buffer bytes. Re-verified on Xahau Testnet NetworkID 21338 — see `Beneficiary/emit_fix_validation.md` (public hashes only). Timer fail-closed still holds.
 
 ## Beneficiary collection
 
@@ -29,7 +30,7 @@ Dead-man's-switch style hooks that distribute the hook account's XAH balance aft
 | **Multi Beneficiary Delegate (MBDC)** | `Beneficiary/MultipleBeneficiary/Multi Delegate/MultiBeneficiaryDelegate.c` | Delegate invokes to distribute full balance across configured beneficiaries. |
 | **Multi Beneficiary Threshold (MBTC)** | `Beneficiary/MultipleBeneficiary/Multi Threshold/MultiBeneficiaryThreshold.c` | After threshold, any non-owner incoming tx triggers multi-beneficiary distribution. |
 
-Prebuilt `.wasm` artifacts sit beside each hook's `.c` source where available (`SingleBeneficiaryDelegate` has source + README only; wasm not bundled yet). Verified Xahau Testnet proof hashes are documented in each hook README (Single Delegate is documented as out-of-scope with no invented hashes).
+Prebuilt `.wasm` artifacts sit beside each hook's `.c` source (including `SingleBeneficiaryDelegate`). Verified Xahau Testnet proof hashes are documented in each hook README (Single Delegate is documented as out-of-scope with no invented hashes).
 
 ## Savings collection
 
