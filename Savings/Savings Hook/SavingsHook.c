@@ -1,6 +1,6 @@
 //**************************************************************
-// Incoming Payment Savings Hook (IPS)- HandyHooks Example
-// Author: @Handy_4ndy
+// Incoming Payment Savings Hook (IPS)- XahauHooks Example
+// Author: Xspence-LTD
 //
 // Description:
 //   Automatically forwards a percentage of incoming payments to up to 3

@@ -201,3 +201,14 @@ These proofs cover the security fixes (contiguous packing / sparse slot forwards
 Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
 
 *Built with ❤️ for the Xahau ecosystem by Xspence-LTD*
+
+## Emit encoding re-verification (2026-09-03)
+
+`PREPARE_PAYMENT_SIMPLE` exact-length emit fix re-tested on Xahau Testnet (NetworkID 21338):
+
+- SetHook: `7A980F72B68D3C169C642F575FB481956DF4F3153101E653230D336E87359D28`
+- SA1 config: `B77E0CE96E617B0AACEFAD0EAAB285666F5C910D619F331C59EF6613126A0C59`
+- SP1 config: `D077C017EB9E1B5DC2F68F951FA3BE59A6D6D353A2F5830AAB320C21E15AD007`
+- Incoming payment emit success: `1BD68721077ED80725845EBB3B411FE7ADA6E20E6B68BACA01BC4EBFAF6CE8BA` - `IPS:: Success :: Payment percentage forwarded to savings accounts`
+
+Full matrix: `../../emit_fix_validation.md`.

@@ -199,3 +199,13 @@ These proofs cover the security fixes (contiguous multi-slot packing / dense BA2
 Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
 
 _Built with ❤️ for the Xahau ecosystem by Xspence-LTD_
+
+## Emit encoding re-verification (2026-09-03)
+
+`PREPARE_PAYMENT_SIMPLE` exact-length emit fix re-tested on Xahau Testnet (NetworkID 21338):
+
+- SetHook DELEGATE: `4BDBA865C1F0D02B28693DE2FCEDBF8B6A9CF43FC7B50CDB92995807D7E5533E`
+- BA1/BP1 config: `305F998A97C93DB6F1C89911F59BDDA6788624A237D3EC0C34B91F30DEB878DE`
+- Delegate SEND emit success: `6B58B9B264A89DFB57BDCA5C31EA61C2BF154A45B44378122745C9C16125EB10` - `MBDC:: Success :: Balance distributed to beneficiaries`
+
+Full matrix: `../../../emit_fix_validation.md`.

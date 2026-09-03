@@ -1,6 +1,6 @@
 //**************************************************************
-// Single Beneficiary Delegate Contract (SBDC) - Xahau HandyHook Collection
-// Author: @Handy_4ndy
+// Single Beneficiary Delegate Contract (SBDC) - XahauHooks
+// Author: Xspence-LTD
 //
 // Description:
 //   Delegate invokes to allow the beneficiary to receive the full XAH balance from this account.

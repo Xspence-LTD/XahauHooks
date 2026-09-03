@@ -149,4 +149,4 @@ Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
 - Unarmed SEND: `8B672B5C7DF0447AD2E8CDABC49898AC523C43C1B3FE6CC7DB0A0AC4932A14EE` — `Timer not armed`
 - Emit success SEND: `C3E25F08196E4D34F067224982FA27CA3EA4B2746E30147E7DAE9577C927B525` — `Balance sent to beneficiary successfully`
 
-Full matrix: `../../emit_fix_validation.md`.
+Full matrix: `../../../emit_fix_validation.md`.

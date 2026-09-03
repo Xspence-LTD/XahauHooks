@@ -1,6 +1,6 @@
 //**************************************************************
-// Multi Beneficiary Contract - HandyHooks Example
-// Author: @Handy_4ndy
+// Multi Beneficiary Contract - XahauHooks Example
+// Author: Xspence-LTD
 //
 // Description:
 //   A Dead Man's Switch for multi-beneficiary distribution.

@@ -1,6 +1,6 @@
 //*****************************************************************
-//  Single Beneficiary Contract – Xahau HandyHook Collection
-//  Author: @Handy_4ndy
+//  Single Beneficiary Contract - XahauHooks
+//  Author: Xspence-LTD
 //
 //  Overview:
 //  Automatically distributes the entire hook account balance to a

@@ -55,3 +55,9 @@ Maintained by [Xspence-LTD](https://github.com/Xspence-LTD).
 ## Independent review
 
 Independent review by [Kairo Vault Technologies GK](https://kairovault.com).
+
+## Build headers
+
+Compile these hooks against the headers in `headers/` in this repository. They contain the exact-length `PREPARE_PAYMENT_SIMPLE` / `PREPARE_PAYMENT_SIMPLE_TRUSTLINE` macros (`sizeout`), which the hook sources rely on when calling `emit(..., txn, txn_len)`.
+
+Live emit proofs: `emit_fix_validation.md`.

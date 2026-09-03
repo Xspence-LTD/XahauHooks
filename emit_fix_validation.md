@@ -1,4 +1,4 @@
-﻿# HandyHooks PREPARE_PAYMENT_SIMPLE emit-fix LIVE validation
+# XahauHooks PREPARE_PAYMENT_SIMPLE emit-fix LIVE validation
 Generated: 2026-09-03 13:06:37 UTC / 14:06:37 BST (Europe/London)
 Network: Xahau Testnet NetworkID 21338 (`https://xahau-test.net`)
 Namespace tag: `emitfix1`

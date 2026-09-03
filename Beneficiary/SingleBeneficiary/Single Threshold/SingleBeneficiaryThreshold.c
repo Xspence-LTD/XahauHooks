@@ -1,6 +1,6 @@
 //**************************************************************
-// Single Beneficiary Threshold Contract (SBTC) - Xahau HandyHook Collection
-// Author: @Handy_4ndy
+// Single Beneficiary Threshold Contract (SBTC) - XahauHooks
+// Author: Xspence-LTD
 //
 // Description:
 //   When the inactivity threshold has been exceeded, any incoming transaction (payment or invoke)

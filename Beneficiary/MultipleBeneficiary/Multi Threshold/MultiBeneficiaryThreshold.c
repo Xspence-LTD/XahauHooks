@@ -1,6 +1,6 @@
 //**************************************************************
-// Multi Beneficiary Threshold Contract (MBTC) - Xahau HandyHook Collection
-// Author: @Handy_4ndy
+// Multi Beneficiary Threshold Contract (MBTC) - XahauHooks
+// Author: Xspence-LTD
 //
 // Description:
 //   When the inactivity threshold has been exceeded, any incoming transaction (payment or invoke)

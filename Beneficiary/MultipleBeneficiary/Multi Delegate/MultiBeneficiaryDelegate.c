@@ -1,6 +1,6 @@
 //**************************************************************
-// Multi Beneficiary Delegate Contract (MBDC) - Xahau HandyHook Collection
-// Author: @Handy_4ndy
+// Multi Beneficiary Delegate Contract (MBDC) - XahauHooks
+// Author: Xspence-LTD
 //
 // Description:
 //   Delegate invokes to distribute the full XAH balance to configured beneficiaries.
